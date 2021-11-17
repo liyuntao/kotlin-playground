@@ -1,7 +1,7 @@
-package lettuce
+package ground.lettuce
 
 import io.lettuce.core.api.coroutines.RedisSetCoroutinesCommands
-import lettuce.RedisLettuceConfig.api
+import ground.lettuce.RedisLettuceConfig.api
 
 suspend fun main(args: Array<String>) {
     val redisApi = api()

@@ -1,4 +1,4 @@
-package lettuce
+package ground.lettuce
 
 import io.lettuce.core.ExperimentalLettuceCoroutinesApi
 import io.lettuce.core.RedisClient

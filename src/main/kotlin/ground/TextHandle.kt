@@ -1,4 +1,8 @@
+package ground
+
 import java.io.File
+
+object TextHandle
 
 fun main() {
     val regex = """put\("(.+)", "(.+)"\);""".toRegex()
