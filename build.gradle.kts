@@ -1,20 +1,23 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.4.31"
+    kotlin("jvm") version "1.6.0"
 }
 
 group = "org.quickstart"
 version = "1.0"
 
 repositories {
-    maven("http://maven.aliyun.com/nexus/content/groups/public/")
+//    maven("http://maven.aliyun.com/nexus/content/groups/public/")
     mavenCentral()
 }
 
 dependencies {
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:%kotlinVersion%")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.5.2")
+    implementation("io.lettuce:lettuce-core:6.1.5.RELEASE")
+    implementation("org.slf4j:slf4j-api:1.7.30")
+
     testImplementation(kotlin("test-junit"))
 }
 
